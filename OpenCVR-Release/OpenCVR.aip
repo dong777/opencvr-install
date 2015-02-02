@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="11.0" version="11.0" Modules="professional" RootPath="." Language="zh" Id="{A4C06A09-2FE3-4560-9F5C-DFB7FF54EBF7}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="DigCertStoreComponent;UpdaterComponent;SerValComponent;MsiExtComponent;MsiAssemblyComponent;MsiServInstComponent;MsiOrgComponent;ActSyncAppComponent;MsiThemeComponent;BackgroundImagesComponent;CPLAppletComponent;MsiClassComponent;WebApplicationsComponent;MsiOdbcDataSrcComponent;MsiAppSearchComponent;MsiInstExSeqComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="此 Installer 数据库包含了安装 [|ProductName] 所需的逻辑和数据。" ValueLocId="*"/>
+    <ROW Property="ARPHELPLINK" Value="http://veyesys.com/"/>
+    <ROW Property="ARPPRODUCTICON" Value="icon1.exe" Type="8"/>
+    <ROW Property="ARPURLINFOABOUT" Value="http://veyesys.com/"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="http://veyesys.com/"/>
+    <ROW Property="Manufacturer" Value="veyesys"/>
+    <ROW Property="ProductCode" Value="2052:{6F8E722C-9E01-4B06-8687-59E13E941979} 1033:{79FF08AB-21D9-470B-B53E-D2E9E7EF405A} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="OpenCVR"/>
+    <ROW Property="ProductVersion" Value="1.1.0" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{6BA3B972-CA25-4000-91E0-5D509E6AEE63}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME#Win32_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME#Win32_Release:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0#Win32_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0#Win32_Release:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows XP/Vista/Windows 7/Windows 8 x64/Windows 8.1 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows XP/Vista/Windows 7/Windows 8 x64/Windows 8.1 x64" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="imageformats_Dir" Directory_Parent="APPDIR" DefaultDir="IMAGEF~1|imageformats"/>
+    <ROW Directory="platforms_Dir" Directory_Parent="APPDIR" DefaultDir="PLATFO~1|platforms"/>
+    <ROW Directory="translations_Dir" Directory_Parent="APPDIR" DefaultDir="TRANSL~1|translations"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="CppUnit.dll" ComponentId="{9D17DB1F-E705-43F1-9FF4-B7E83B614907}" Directory_="APPDIR" Attributes="0" KeyPath="CppUnit.dll"/>
+    <ROW Component="D3DX9_43.dll" ComponentId="{128E9100-9DBF-4512-8897-ECF85B812C42}" Directory_="APPDIR" Attributes="0" KeyPath="D3DX9_43.dll"/>
+    <ROW Component="OpenCVR.exe" ComponentId="{A8A55C48-09A2-4098-8ECE-2E454C839661}" Directory_="APPDIR" Attributes="0" KeyPath="OpenCVR.exe"/>
+    <ROW Component="PocoData.dll" ComponentId="{29D6A0BD-3A8B-46B2-8CB8-035D1997C7A4}" Directory_="APPDIR" Attributes="0" KeyPath="PocoData.dll"/>
+    <ROW Component="PocoDataSQLite.dll" ComponentId="{457C94AE-47A6-4632-AB12-7BC977318252}" Directory_="APPDIR" Attributes="0" KeyPath="PocoDataSQLite.dll"/>
+    <ROW Component="PocoFoundation.dll" ComponentId="{FFD675A4-7AF4-4BC0-A030-BCAE09EF2EB3}" Directory_="APPDIR" Attributes="0" KeyPath="PocoFoundation.dll"/>
+    <ROW Component="PocoJSON.dll" ComponentId="{D1A89493-5EF7-4AC1-A165-0BDFBA7BDE8A}" Directory_="APPDIR" Attributes="0" KeyPath="PocoJSON.dll"/>
+    <ROW Component="PocoNet.dll" ComponentId="{34374584-A762-4461-9038-0D9363315B95}" Directory_="APPDIR" Attributes="0" KeyPath="PocoNet.dll"/>
+    <ROW Component="PocoUtil.dll" ComponentId="{38E02F95-3560-49EB-9C73-47A4FE17BF2E}" Directory_="APPDIR" Attributes="0" KeyPath="PocoUtil.dll"/>
+    <ROW Component="PocoXML.dll" ComponentId="{3967E02D-5CC3-4F07-A1C8-A6B70666CD7E}" Directory_="APPDIR" Attributes="0" KeyPath="PocoXML.dll"/>
+    <ROW Component="PocoZip.dll" ComponentId="{602816DE-A145-4AE2-BC98-F801552660D6}" Directory_="APPDIR" Attributes="0" KeyPath="PocoZip.dll"/>
+    <ROW Component="ProductInformation" ComponentId="{C0757A62-136B-4D82-95F1-498A9037098C}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="Qt5Core.dll" ComponentId="{117F4DC9-9C71-46AA-8D63-6B43D6F1DBC8}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Core.dll"/>
+    <ROW Component="Qt5Gui.dll" ComponentId="{6C622E7B-8C12-4115-B394-B02DFDF483DC}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Gui.dll"/>
+    <ROW Component="Qt5Network.dll" ComponentId="{876FE947-B0A2-4A3A-9F94-18677159CCAB}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Network.dll"/>
+    <ROW Component="Qt5Widgets.dll" ComponentId="{352E9F69-10DF-423E-A678-35A5B69CFD6A}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Widgets.dll"/>
+    <ROW Component="Qt5Xml.dll" ComponentId="{7531611E-7A4A-47C4-93A8-D6C0A38C688A}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Xml.dll"/>
+    <ROW Component="Qt5XmlPatterns.dll" ComponentId="{76F267B8-7B2E-4107-A370-49A8DDD9F3E1}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5XmlPatterns.dll"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{2EF46FA5-1125-4A61-9F5D-29C186906D74}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="avcodec55.dll" ComponentId="{3D981F3F-D229-4118-A47F-144E29357545}" Directory_="APPDIR" Attributes="0" KeyPath="avcodec55.dll"/>
+    <ROW Component="avformat55.dll" ComponentId="{6DC003E4-243F-4CFD-B350-31D66F477D1A}" Directory_="APPDIR" Attributes="0" KeyPath="avformat55.dll"/>
+    <ROW Component="avutil52.dll" ComponentId="{BC05508C-4B3C-4AFD-95BB-BB2F83715BE9}" Directory_="APPDIR" Attributes="0" KeyPath="avutil52.dll"/>
+    <ROW Component="icudt53.dll" ComponentId="{C20389E7-F2CF-4999-815B-3889E2B993DF}" Directory_="APPDIR" Attributes="0" KeyPath="icudt53.dll"/>
+    <ROW Component="icuin53.dll" ComponentId="{E8D4545A-7669-409B-824D-C02C188B4F5E}" Directory_="APPDIR" Attributes="0" KeyPath="icuin53.dll"/>
+    <ROW Component="icuuc53.dll" ComponentId="{C8A0539A-BFB7-478D-BD97-DEFD20C48168}" Directory_="APPDIR" Attributes="0" KeyPath="icuuc53.dll"/>
+    <ROW Component="libEGL.dll" ComponentId="{0BCE4090-3144-47F8-A762-D74F32C7935F}" Directory_="APPDIR" Attributes="0" KeyPath="libEGL.dll"/>
+    <ROW Component="libGLESv2.dll" ComponentId="{BAF4C241-DCE4-46F7-AFD9-93029AEC2D02}" Directory_="APPDIR" Attributes="0" KeyPath="libGLESv2.dll"/>
+    <ROW Component="libeay32.dll" ComponentId="{87D6FAC1-9EA2-4C76-82E9-84052778C553}" Directory_="APPDIR" Attributes="0" KeyPath="libeay32.dll"/>
+    <ROW Component="libssl32.dll" ComponentId="{007FE8E2-264C-470C-891A-195BA911F8DD}" Directory_="APPDIR" Attributes="0" KeyPath="libssl32.dll"/>
+    <ROW Component="msvcp100.dll" ComponentId="{46FF32E3-1611-413E-9A64-642AF5D22A96}" Directory_="APPDIR" Attributes="0" KeyPath="msvcp100.dll"/>
+    <ROW Component="msvcp120.dll" ComponentId="{89C13239-D812-4EBF-9E78-B75564BA8349}" Directory_="APPDIR" Attributes="0" KeyPath="msvcp120.dll"/>
+    <ROW Component="msvcr100.dll" ComponentId="{8D357D33-F58D-4CEE-AADF-9A4BA2695D6C}" Directory_="APPDIR" Attributes="0" KeyPath="msvcr100.dll"/>
+    <ROW Component="msvcr120.dll" ComponentId="{A132BA96-015F-43AC-91F4-2A75D3334225}" Directory_="APPDIR" Attributes="0" KeyPath="msvcr120.dll"/>
+    <ROW Component="qdds.dll" ComponentId="{12D17AD5-BE4D-41E4-B1AE-2744E33D1635}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qdds.dll"/>
+    <ROW Component="qgif.dll" ComponentId="{069C7010-E5EC-4037-83DA-DCC51B211FAF}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qgif.dll"/>
+    <ROW Component="qicns.dll" ComponentId="{11C9B871-4B2D-4A61-B71E-2E26CC73295A}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qicns.dll"/>
+    <ROW Component="qico.dll" ComponentId="{A1B9C10A-21EE-4338-8AFC-A6FACB81BE82}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qico.dll"/>
+    <ROW Component="qjp2.dll" ComponentId="{37132ED0-0A1C-4092-AB40-29D9F3D649DD}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qjp2.dll"/>
+    <ROW Component="qjpeg.dll" ComponentId="{700B72AD-EDD7-49C0-A328-9406AE46EAFB}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qjpeg.dll"/>
+    <ROW Component="qminimal.dll" ComponentId="{1203DD1C-EBDF-4487-B626-C9974B03A50E}" Directory_="platforms_Dir" Attributes="0" KeyPath="qminimal.dll"/>
+    <ROW Component="qmng.dll" ComponentId="{7966BDD0-AB16-4F68-B85D-D0EB35048E8A}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qmng.dll"/>
+    <ROW Component="qoffscreen.dll" ComponentId="{05485A67-4A56-4484-9244-2AEC0D338B84}" Directory_="platforms_Dir" Attributes="0" KeyPath="qoffscreen.dll"/>
+    <ROW Component="qsvg.dll" ComponentId="{1339BCF4-957A-4FF6-9A04-2E95CB93D6B4}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qsvg.dll"/>
+    <ROW Component="qtga.dll" ComponentId="{20E0EDE0-A2EA-4767-A34B-696041AF2140}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtga.dll"/>
+    <ROW Component="qtiff.dll" ComponentId="{445DDB82-C41C-4D73-8A38-8ACFDC236EC8}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qtiff.dll"/>
+    <ROW Component="qwbmp.dll" ComponentId="{2466831F-6B70-4203-8765-87CF641B6947}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qwbmp.dll"/>
+    <ROW Component="qwebp.dll" ComponentId="{E271960B-6615-4214-94C6-186FCBD34713}" Directory_="imageformats_Dir" Attributes="0" KeyPath="qwebp.dll"/>
+    <ROW Component="qwindows.dll" ComponentId="{E1F9AAEB-B5ED-4846-9EEA-426E0C5F752C}" Directory_="platforms_Dir" Attributes="0" KeyPath="qwindows.dll"/>
+    <ROW Component="ssleay32.dll" ComponentId="{D75ABDDA-9783-449C-A239-FDAEE900A65B}" Directory_="APPDIR" Attributes="0" KeyPath="ssleay32.dll"/>
+    <ROW Component="swscale2.dll" ComponentId="{2E5961D0-38C9-41AB-93AB-6C9DEB4D77AD}" Directory_="APPDIR" Attributes="0" KeyPath="swscale2.dll"/>
+    <ROW Component="vccorlib120.dll" ComponentId="{3054D7B0-2DE4-4563-B8DC-FFFEAAC561D4}" Directory_="APPDIR" Attributes="0" KeyPath="vccorlib120.dll"/>
+    <ROW Component="velib.dll" ComponentId="{B4125BBE-0208-416F-BE7C-D4D2C76AD3FF}" Directory_="APPDIR" Attributes="0" KeyPath="velib.dll"/>
+    <ROW Component="veuilib.dll" ComponentId="{79D7B92D-328D-43F4-92C6-3233B55C7B3D}" Directory_="APPDIR" Attributes="0" KeyPath="veuilib.dll"/>
+    <ROW Component="vscloudnode_zh.qm" ComponentId="{53521681-B223-4F16-AF2D-002087A45B1F}" Directory_="translations_Dir" Attributes="0" KeyPath="vscloudnode_zh.qm" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="CppUnit.dll D3DX9_43.dll OpenCVR.exe PocoData.dll PocoDataSQLite.dll PocoFoundation.dll PocoJSON.dll PocoNet.dll PocoUtil.dll PocoXML.dll PocoZip.dll ProductInformation Qt5Core.dll Qt5Gui.dll Qt5Network.dll Qt5Widgets.dll Qt5Xml.dll Qt5XmlPatterns.dll SHORTCUTDIR avcodec55.dll avformat55.dll avutil52.dll icudt53.dll icuin53.dll icuuc53.dll libEGL.dll libGLESv2.dll libeay32.dll libssl32.dll msvcp100.dll msvcp120.dll msvcr100.dll msvcr120.dll qdds.dll qgif.dll qicns.dll qico.dll qjp2.dll qjpeg.dll qminimal.dll qmng.dll qoffscreen.dll qsvg.dll qtga.dll qtiff.dll qwbmp.dll qwebp.dll qwindows.dll ssleay32.dll swscale2.dll vccorlib120.dll velib.dll veuilib.dll vscloudnode_zh.qm"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="CppUnit.dll" Component_="CppUnit.dll" FileName="CppUnit.dll" Attributes="0" SourcePath="ReleaseBin\CppUnit.dll" SelfReg="false" NextFile="D3DX9_43.dll"/>
+    <ROW File="D3DX9_43.dll" Component_="D3DX9_43.dll" FileName="D3DX9_43.dll" Attributes="0" SourcePath="ReleaseBin\D3DX9_43.dll" SelfReg="false" NextFile="icudt53.dll"/>
+    <ROW File="OpenCVR.exe" Component_="OpenCVR.exe" FileName="OpenCVR.exe" Attributes="0" SourcePath="..\..\60-video\ve\veapp\prj_win32\Win32\Release\OpenCVR.exe" SelfReg="false" NextFile="qdds.dll" DigSign="true"/>
+    <ROW File="PocoData.dll" Component_="PocoData.dll" FileName="PocoData.dll" Attributes="0" SourcePath="ReleaseBin\PocoData.dll" SelfReg="false" NextFile="PocoDataSQLite.dll"/>
+    <ROW File="PocoDataSQLite.dll" Component_="PocoDataSQLite.dll" FileName="POCODA~1.DLL|PocoDataSQLite.dll" Attributes="0" SourcePath="ReleaseBin\PocoDataSQLite.dll" SelfReg="false" NextFile="PocoFoundation.dll"/>
+    <ROW File="PocoFoundation.dll" Component_="PocoFoundation.dll" FileName="POCOFO~1.DLL|PocoFoundation.dll" Attributes="0" SourcePath="ReleaseBin\PocoFoundation.dll" SelfReg="false" NextFile="PocoJSON.dll"/>
+    <ROW File="PocoJSON.dll" Component_="PocoJSON.dll" FileName="PocoJSON.dll" Attributes="0" SourcePath="ReleaseBin\PocoJSON.dll" SelfReg="false" NextFile="PocoNet.dll"/>
+    <ROW File="PocoNet.dll" Component_="PocoNet.dll" FileName="PocoNet.dll" Attributes="0" SourcePath="ReleaseBin\PocoNet.dll" SelfReg="false" NextFile="PocoUtil.dll"/>
+    <ROW File="PocoUtil.dll" Component_="PocoUtil.dll" FileName="PocoUtil.dll" Attributes="0" SourcePath="ReleaseBin\PocoUtil.dll" SelfReg="false" NextFile="PocoXML.dll"/>
+    <ROW File="PocoXML.dll" Component_="PocoXML.dll" FileName="PocoXML.dll" Attributes="0" SourcePath="ReleaseBin\PocoXML.dll" SelfReg="false" NextFile="PocoZip.dll"/>
+    <ROW File="PocoZip.dll" Component_="PocoZip.dll" FileName="PocoZip.dll" Attributes="0" SourcePath="ReleaseBin\PocoZip.dll" SelfReg="false" NextFile="Qt5Core.dll"/>
+    <ROW File="Qt5Core.dll" Component_="Qt5Core.dll" FileName="Qt5Core.dll" Attributes="0" SourcePath="ReleaseBin\Qt5Core.dll" SelfReg="false" NextFile="Qt5Gui.dll"/>
+    <ROW File="Qt5Gui.dll" Component_="Qt5Gui.dll" FileName="Qt5Gui.dll" Attributes="0" SourcePath="ReleaseBin\Qt5Gui.dll" SelfReg="false" NextFile="Qt5Network.dll"/>
+    <ROW File="Qt5Network.dll" Component_="Qt5Network.dll" FileName="QT5NET~1.DLL|Qt5Network.dll" Attributes="0" SourcePath="ReleaseBin\Qt5Network.dll" SelfReg="false" NextFile="Qt5Widgets.dll"/>
+    <ROW File="Qt5Widgets.dll" Component_="Qt5Widgets.dll" FileName="QT5WID~1.DLL|Qt5Widgets.dll" Attributes="0" SourcePath="ReleaseBin\Qt5Widgets.dll" SelfReg="false" NextFile="Qt5Xml.dll"/>
+    <ROW File="Qt5Xml.dll" Component_="Qt5Xml.dll" FileName="Qt5Xml.dll" Attributes="0" SourcePath="ReleaseBin\Qt5Xml.dll" SelfReg="false" NextFile="Qt5XmlPatterns.dll"/>
+    <ROW File="Qt5XmlPatterns.dll" Component_="Qt5XmlPatterns.dll" FileName="QT5XML~1.DLL|Qt5XmlPatterns.dll" Attributes="0" SourcePath="ReleaseBin\Qt5XmlPatterns.dll" SelfReg="false" NextFile="ssleay32.dll"/>
+    <ROW File="avcodec55.dll" Component_="avcodec55.dll" FileName="AVCODE~1.DLL|avcodec-55.dll" Attributes="0" SourcePath="ReleaseBin\avcodec-55.dll" SelfReg="false" NextFile="avformat55.dll"/>
+    <ROW File="avformat55.dll" Component_="avformat55.dll" FileName="AVFORM~1.DLL|avformat-55.dll" Attributes="0" SourcePath="ReleaseBin\avformat-55.dll" SelfReg="false" NextFile="avutil52.dll"/>
+    <ROW File="avutil52.dll" Component_="avutil52.dll" FileName="AVUTIL~1.DLL|avutil-52.dll" Attributes="0" SourcePath="ReleaseBin\avutil-52.dll" SelfReg="false" NextFile="CppUnit.dll"/>
+    <ROW File="icudt53.dll" Component_="icudt53.dll" FileName="icudt53.dll" Attributes="0" SourcePath="ReleaseBin\icudt53.dll" SelfReg="false" NextFile="icuin53.dll"/>
+    <ROW File="icuin53.dll" Component_="icuin53.dll" FileName="icuin53.dll" Attributes="0" SourcePath="ReleaseBin\icuin53.dll" SelfReg="false" NextFile="icuuc53.dll"/>
+    <ROW File="icuuc53.dll" Component_="icuuc53.dll" FileName="icuuc53.dll" Attributes="0" SourcePath="ReleaseBin\icuuc53.dll" SelfReg="false" NextFile="libeay32.dll"/>
+    <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="ReleaseBin\libEGL.dll" SelfReg="false" NextFile="libGLESv2.dll"/>
+    <ROW File="libGLESv2.dll" Component_="libGLESv2.dll" FileName="LIBGLE~1.DLL|libGLESv2.dll" Attributes="0" SourcePath="ReleaseBin\libGLESv2.dll" SelfReg="false" NextFile="libssl32.dll"/>
+    <ROW File="libeay32.dll" Component_="libeay32.dll" FileName="libeay32.dll" Attributes="0" SourcePath="ReleaseBin\libeay32.dll" SelfReg="false" NextFile="libEGL.dll"/>
+    <ROW File="libssl32.dll" Component_="libssl32.dll" FileName="libssl32.dll" Attributes="0" SourcePath="ReleaseBin\libssl32.dll" SelfReg="false" NextFile="msvcp100.dll"/>
+    <ROW File="msvcp100.dll" Component_="msvcp100.dll" FileName="msvcp100.dll" Attributes="0" SourcePath="ReleaseBin\msvcp100.dll" SelfReg="false" NextFile="msvcp120.dll"/>
+    <ROW File="msvcp120.dll" Component_="msvcp120.dll" FileName="msvcp120.dll" Attributes="0" SourcePath="ReleaseBin\msvcp120.dll" SelfReg="false" NextFile="msvcr100.dll"/>
+    <ROW File="msvcr100.dll" Component_="msvcr100.dll" FileName="msvcr100.dll" Attributes="0" SourcePath="ReleaseBin\msvcr100.dll" SelfReg="false" NextFile="msvcr120.dll"/>
+    <ROW File="msvcr120.dll" Component_="msvcr120.dll" FileName="msvcr120.dll" Attributes="0" SourcePath="ReleaseBin\msvcr120.dll" SelfReg="false" NextFile="PocoData.dll"/>
+    <ROW File="qdds.dll" Component_="qdds.dll" FileName="qdds.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qdds.dll" SelfReg="false" NextFile="qgif.dll"/>
+    <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qgif.dll" SelfReg="false" NextFile="qicns.dll"/>
+    <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qicns.dll" SelfReg="false" NextFile="qico.dll"/>
+    <ROW File="qico.dll" Component_="qico.dll" FileName="qico.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qico.dll" SelfReg="false" NextFile="qjp2.dll"/>
+    <ROW File="qjp2.dll" Component_="qjp2.dll" FileName="qjp2.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qjp2.dll" SelfReg="false" NextFile="qjpeg.dll"/>
+    <ROW File="qjpeg.dll" Component_="qjpeg.dll" FileName="qjpeg.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qjpeg.dll" SelfReg="false" NextFile="qmng.dll"/>
+    <ROW File="qminimal.dll" Component_="qminimal.dll" FileName="qminimal.dll" Attributes="0" SourcePath="ReleaseBin\platforms\qminimal.dll" SelfReg="false" NextFile="qoffscreen.dll"/>
+    <ROW File="qmng.dll" Component_="qmng.dll" FileName="qmng.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qmng.dll" SelfReg="false" NextFile="qsvg.dll"/>
+    <ROW File="qoffscreen.dll" Component_="qoffscreen.dll" FileName="QOFFSC~1.DLL|qoffscreen.dll" Attributes="0" SourcePath="ReleaseBin\platforms\qoffscreen.dll" SelfReg="false" NextFile="qwindows.dll"/>
+    <ROW File="qsvg.dll" Component_="qsvg.dll" FileName="qsvg.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qsvg.dll" SelfReg="false" NextFile="qtga.dll"/>
+    <ROW File="qtga.dll" Component_="qtga.dll" FileName="qtga.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qtga.dll" SelfReg="false" NextFile="qtiff.dll"/>
+    <ROW File="qtiff.dll" Component_="qtiff.dll" FileName="qtiff.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qtiff.dll" SelfReg="false" NextFile="qwbmp.dll"/>
+    <ROW File="qwbmp.dll" Component_="qwbmp.dll" FileName="qwbmp.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qwbmp.dll" SelfReg="false" NextFile="qwebp.dll"/>
+    <ROW File="qwebp.dll" Component_="qwebp.dll" FileName="qwebp.dll" Attributes="0" SourcePath="ReleaseBin\imageformats\qwebp.dll" SelfReg="false" NextFile="qminimal.dll"/>
+    <ROW File="qwindows.dll" Component_="qwindows.dll" FileName="qwindows.dll" Attributes="0" SourcePath="ReleaseBin\platforms\qwindows.dll" SelfReg="false" NextFile="vscloudnode_zh.qm"/>
+    <ROW File="ssleay32.dll" Component_="ssleay32.dll" FileName="ssleay32.dll" Attributes="0" SourcePath="ReleaseBin\ssleay32.dll" SelfReg="false" NextFile="swscale2.dll"/>
+    <ROW File="swscale2.dll" Component_="swscale2.dll" FileName="SWSCAL~1.DLL|swscale-2.dll" Attributes="0" SourcePath="ReleaseBin\swscale-2.dll" SelfReg="false" NextFile="vccorlib120.dll"/>
+    <ROW File="vccorlib120.dll" Component_="vccorlib120.dll" FileName="VCCORL~1.DLL|vccorlib120.dll" Attributes="0" SourcePath="ReleaseBin\vccorlib120.dll" SelfReg="false" NextFile="velib.dll"/>
+    <ROW File="velib.dll" Component_="velib.dll" FileName="velib.dll" Attributes="0" SourcePath="ReleaseBin\velib.dll" SelfReg="false" NextFile="veuilib.dll"/>
+    <ROW File="veuilib.dll" Component_="veuilib.dll" FileName="veuilib.dll" Attributes="0" SourcePath="ReleaseBin\veuilib.dll" SelfReg="false"/>
+    <ROW File="vscloudnode_zh.qm" Component_="vscloudnode_zh.qm" FileName="VSCLOU~1.QM|vscloudnode_zh.qm" Attributes="0" SourcePath="ReleaseBin\translations\vscloudnode_zh.qm" SelfReg="false" NextFile="vscloudnode_zh.ts"/>
+    <ROW File="vscloudnode_zh.ts" Component_="vscloudnode_zh.qm" FileName="VSCLOU~1.TS|vscloudnode_zh.ts" Attributes="0" SourcePath="ReleaseBin\translations\vscloudnode_zh.ts" SelfReg="false" NextFile="avcodec55.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="Install" PackageFileName="OpenCVR r1.1.0" Languages="zh;en" InstallationType="4" UseLargeSchema="true"/>
+    <ROW BuildKey="Win32_Release" BuildName="Win32_Release" BuildOrder="2" BuildType="0" PackageFolder="Install" PackageFileName="OpenCVR r1.1.0" Languages="zh;en" LangOpt="2" InstallationType="4" PackageType="1" LangsDialog="true" UseLargeSchema="true"/>
+    <ATTRIBUTE name="CurrentBuild" value="Win32_Release"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_zh.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="icon1.exe" SourcePath="icon1.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_DpiContentScale" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR (VersionNT AND (NOT VersionNT64)) )" Description="[ProductName] cannot be installed on [WindowsTypeNT64Display]" DescriptionLocId="AI.LaunchCondition.NoNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT40Display]" DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild;Win32_Release"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild;Win32_Release"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="OpenCVR" Directory_="SHORTCUTDIR" Name="OpenCVR" Component_="OpenCVR.exe" Target="[#OpenCVR.exe]" Description="OpenCVR" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="OpenCVR_1" Directory_="DesktopFolder" Name="OpenCVR" Component_="OpenCVR.exe" Target="[#OpenCVR.exe]" Description="OpenCVR" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
